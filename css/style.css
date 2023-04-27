@@ -1,10 +1,12 @@
-  :root {
+/* colors */
+:root {
     --color-primary: #2584ff;
     --color-secondary: #00d9ff;
     --color-accent: tomato;
     --color-heading: #1b0760;
     --color-body: #918ca4;
 }
+/* topography */
 html {
     font-size: 62.5%;
 }
@@ -42,5 +44,34 @@ h3 {
         }
         h3 {
             font-size: 2.4rem;
+        }
+    }
+    /* links */
+    a {
+        text-decoration: none;
+    }
+    .link-arrow {
+        color: var(--color-accent);
+        text-transform: uppercase;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    .link-arrow::after {
+        content: "-->";
+        margin-left: .8rem;
+    }
+/*     
+    .link-arrow:hover::after
+    .link-arrow::after:hover
+    chera dovomi kar nakard va avali kar mikonem?  */
+    .link-arrow:hover::after {
+        /* transform: translateX(1.5rem);  
+        chera transform kar nemikone va margiin kar mikone?*/
+        margin-left: 1.4em;
+        transition: margin .3s ease-out;
+    }
+    @media screen and (min-width: 1024px) {
+        .link-arrow {
+            font-size: 1.5rem;
         }
     }
