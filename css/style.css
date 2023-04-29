@@ -101,3 +101,20 @@ h3 {
             font-size: 1.2rem;
         }
     }
+    /* lists */
+    .list {
+        padding-left: 0;
+        list-style: none;
+        color: var(--color-heading);
+    }
+    .list--inline .list__items {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+    .list--tick {
+        list-style-image: url(../images/icon-green.svg);
+        margin-left: 3rem;
+    }
+    .list--tick .list__items { 
+        padding-left: 1rem;
+    }
