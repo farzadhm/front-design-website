@@ -5,6 +5,7 @@
     --color-accent: tomato;
     --color-heading: #1b0760;
     --color-body: #918ca4;
+    --color-border: #ccc;
 }
 *, *::after, *::before {
     box-sizing: border-box;
@@ -172,11 +173,6 @@ h3 {
     }
     .btn--block { 
         display: inline-block;
-        width: 100%;
-    }
-    .btn--container {
-        display: flex;
-
     }
     .btn--outline {
         color: var(--color-heading);
@@ -190,3 +186,41 @@ h3 {
     .btn {
         font-size: 1.5rem;
    } 
+   }
+   /* inputs */
+   .inputs{
+    border-radius: 30px;
+    border: 2px solid var(--color-border) ;
+    color: var(--color-heading);
+    margin-left: 2rem;
+    outline: 0;
+    padding: 1.5rem 3.5rem;
+   }
+   ::placeholder {
+    color: lightgray;
+    font-size: 2rem;
+   }
+   .input--btn {
+    filter: drop-shadow(black);
+   }
+   @media screen and (min-width: 1024px) {
+    .inputs {
+        font-size: 1.5rem;
+    }
+    ::placeholder {
+        font-size: 1.5rem;
+    }
+   }
+   .input-group {
+    border: 1px solid var(--color-border);
+    border-radius: 30px;
+    display: flex;
+   }
+   .input-group .inputs{
+    border: 0;
+    flex-grow: 1;
+   }
+   .input-group .btn {
+    margin: 4px;
+   }
+    
