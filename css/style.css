@@ -59,16 +59,12 @@ h3 {
     .link-arrow::after {
         content: "-->";
         margin-left: .8rem;
+        display: inline-block;
+        transition: all .2s ease-in;
     }
-/*     
-    .link-arrow:hover::after
-    .link-arrow::after:hover
-    chera dovomi kar nakard va avali kar mikonem?  */
     .link-arrow:hover::after {
-        /* transform: translateX(1.5rem);  
-        chera transform kar nemikone va margiin kar mikone?*/
-        margin-left: 1.4em;
-        transition: margin .3s ease-out;
+        transform: translatex(20px); 
+        transition: all .5s ease-out;
     }
     @media screen and (min-width: 1024px) {
         .link-arrow {
@@ -117,4 +113,24 @@ h3 {
     }
     .list--tick .list__items { 
         padding-left: 1rem;
+    }
+    /* icons */
+    .icon {
+    width: 40px;
+    height: 40px;
+    }
+    .icon--primary {
+       fill: var(--color-primary);}
+    .icon--secondary {
+        fill: var(--color-secondary);
+        
+    }
+    .icon-container {
+        background-color: #d6eaed;
+        display: inline-flex;
+        width: 64px;
+        height: 64px;
+        border-radius: 100%;
+        align-items: center;
+        justify-content: center;
     }
