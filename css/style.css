@@ -262,6 +262,9 @@ h3 {
     background-color: var(--color-secondary);
     color: #fff;
 }
+.card--primary .badge--primary {
+    background-color: #126de4;
+}
 .card--secondary .badge--secondary {
     background-color: #02cdf1;
 }
@@ -270,6 +273,19 @@ h3 {
 }
 
 /* plans  */
+.plan {
+transition: all .3s ease-in;
+margin-top: 10rem;
+}
+.plan:hover {
+scale: 1.05;
+}
+.plan--popular {
+    scale: 1.05;
+}
+.plan--popular:hover {
+    scale: 1.1;
+}
 .plan__name {
     color: #fff;
     margin:0 ;
@@ -602,3 +618,14 @@ max-width: 670px;
         text-align: center;
     }
 } 
+/* block plan */
+.block-plan .card--container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+.block-plan {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}}
