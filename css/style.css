@@ -24,6 +24,7 @@ body {
 h1, h2, h3 {
      color: var(--color-heading);
      margin-bottom: 1rem;
+     line-height: 1.1;
     }
 h1 {
      font-size: 7rem;
@@ -362,7 +363,7 @@ content: open-quote;
             font-size: 1.6rem;
         }
     }
-    /* grids  */
+/* grids  */
     .grid {
         display: grid;
     }
@@ -372,7 +373,7 @@ content: open-quote;
             grid-template-columns:repeat(2, 1fr);
         }
     }
-    /* testimonial  */
+/* testimonial  */
     .testimonial {
         padding: 3rem;
     }
@@ -404,7 +405,7 @@ content: open-quote;
             margin-left: 6rem;
         }
     }
-    /* callouts */
+/* callouts */
     .callout {
         padding: 4rem;
         border-radius: 5px;
@@ -437,7 +438,7 @@ content: open-quote;
             grid-template-columns: 1fr auto;
         }
     }
-    /* collapsible */
+/* collapsible */
     .collapsible--header {
         display: flex;
         justify-content: space-between;
@@ -466,7 +467,7 @@ content: open-quote;
         max-height: 100vh;
         opacity: 1;
     }
-    /* blocks */
+/* blocks */
     .block {
         --padding-vertical: 6rem;
         padding: var(--padding-vertical);
@@ -496,7 +497,7 @@ content: open-quote;
     max-width: 1140px;
     margin: 0 auto;
    }
-   /* navigation bars */
+/* navigation bars */
    .nav {
     background-color: #000;
     display: flex;
@@ -544,4 +545,26 @@ content: open-quote;
         .nav__item {
             border: 0;
         }
+}
+/* hero */
+.hero__img {
+    width: 100%;
+}
+.hero__tagline {
+    font-size: 2rem;
+    color: #b9c3cf;
+    letter-spacing:1px ;
+    margin: 2rem 0 5rem ;
+}
+.hero {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+@media screen and (min-width: 768px) {
+   .hero {
+    padding-top: 0;
+   }
+    .hero__content {
+        text-align: left;
+        align-self: center;
+    }
 }
