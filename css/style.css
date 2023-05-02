@@ -629,3 +629,26 @@ max-width: 670px;
     width: 100%;
     justify-content: space-between;
 }}
+/* features block */
+.feature {
+    gap: 4rem 2rem;
+    margin: 12rem 0;
+}
+.feature:first-of-type {
+    margin-top: 3rem;
+}
+.block--features {
+    align-self: center;
+}
+.feature__heading {
+    margin-top: 1rem 0;
+}
+.feature__header {
+    text-align: left;
+}
+@media screen and (min-width: 768px) {
+.feature:nth-of-type(even) , .feature__content {
+    order: 2;
+}
+
+}
