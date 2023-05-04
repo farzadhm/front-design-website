@@ -475,6 +475,8 @@ content: open-quote;
     .collapsible--header {
         display: flex;
         justify-content: space-between;
+        border-bottom: 1px solid var(--color-body-darker);
+        padding: 1rem;
     }
     .collapsible--title {
         margin-top: 0;
@@ -482,7 +484,8 @@ content: open-quote;
         color: #fff;
     }
     .collapsible {
-        background-color: black;
+        background-color: black;    
+        padding: 1REM 3REM;
     }
     .collapsible--content {
        max-height: 0;
@@ -680,4 +683,62 @@ max-width: 670px;
         grid-template-columns: 50% 50%;
     }
 
+}
+/* footer */
+.fot {
+    position: relative;
+    /* background-color: #000;
+    width: 100%; CHERA IN DOTA EMA NEMISHE? */
+}
+.fot a:visited, .fot a{
+    color: var(--color-body-darker);
+    transition: all .3s ease-in;
+}
+.fot a:hover {
+    color: var(--color-body);
+}
+.fot--content {
+    background-color: #000;
+    position: fixed;
+    bottom: 0vh;
+    width: 100%;
+}
+.footer--copyright {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 4rem;
+}
+.footer--copyright p {
+    margin-top: 2rem;
+}
+@media screen and (min-width:768px) {
+    .fot--content {
+        /* display: flex;
+        width: 100%;
+        justify-content: space-evenly; CHERA RO ABADE 1060 RESPONSIVE NIST?*/
+        display: grid;
+        /* grid-template-columns: repeat(auto-fit, minmax (15rem, 1fr)); chera in ham kar nakard?*/
+        grid-template-columns:200px 1fr 1fr 1fr 1fr  ;
+        width: 100%;
+        font-size: 1.25vw;
+    }
+    .footer--copyright {
+        order: -1;
+    }
+    .collapsible--icon {
+        display: none;
+    }
+    .collapsible, .collapsible--content {
+        max-height: 100vh;
+        opacity: 1;
+    }
+    .collapsible--title {
+        font-size: 1.25vw;
+    }
+    .footer--copyright>a>img {
+        width: 100%;
+    }
+    .footer--copyright {
+        padding: 1rem 3rem;
+    }
 }
